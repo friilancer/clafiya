@@ -31,6 +31,7 @@
     padding: 10px 0;
     margin: 15px 0;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .nav_list_item__active{
@@ -42,6 +43,7 @@
     border-top: 1px solid #E8E8E8;
     margin: 10px 0;
 }
+
 
 @media screen and (min-width: 1000px){
     .nav{
