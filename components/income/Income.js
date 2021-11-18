@@ -8,8 +8,17 @@ const TotalIncome = () => {
     let [data, setData] = useState({
         labels:["", "1st June", "8th July", "16th Augt", "24 Sept", "15 Octo", "" ],
         datasets:[{
-            data: [0, 50000, 110000, 30000, 66000, 43000, 43000],
-            tension: 0.5
+            data: [
+                0, 
+                50000, 
+                110000, 
+                30000, 
+                66000, 
+                43000, 
+                43000
+            ],
+            tension: 0.5,
+            borderColor:"#31517A"
         }]
     })
 
@@ -19,31 +28,50 @@ const TotalIncome = () => {
                 display:true,
                 text:"$120,111",
                 align:"start",
-                color:"#000000"
+                color:"#000000",
+                font:{
+                    size:25
+                }
             },
             subtitle: {
                 display: true,
                 text:"Income in current month",
                 align:"end",
-                color:"#000000"
+                font:{
+                    size:15
+                },
+                padding:10,
+                color:"#A0A4A8",
+                fullSize:false
             },
             legend:{
                 display: false
             }
         },
+        layout: {
+            padding: 30
+        },
         scales: {
             y: {
                 beginAtZero: true,
+                ticks:{
+                    callback: function(value, index, values) {
+                        return `$${value}`;
+                    }
+                },
                 grid:{
                     borderDash:[4],
                     borderDashOffset:20,
-                    tickLength:0
+                    tickLength:0,
+                    drawBorder: false
                 }
             },
             x:{
                 beginAtZero:true,
                 grid:{
-                    display:false
+                    tickLength:6,
+                    color:"transparent",
+                    tickColor:"#A0A4A8"
                 }
             }
         },
