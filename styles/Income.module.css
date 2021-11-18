@@ -1,21 +1,23 @@
-.income_container{
+.charts_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 3%;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 15px 5px;
 }
 
 
-.income_container div{
-    height: 50px;
-    background: grey;
+.charts{
+    position: relative;
+    width: 100%;
+    margin: auto;
 }
 
 
-@media screen and (min-width: 1300px) {
-    .income_container{
-        padding: 10px 5px;
+@media screen and (min-width: 700px) {
+    .charts_container{
+        padding: 5px;
+        grid-template-columns: 1fr 1fr;
     }
+    
 }

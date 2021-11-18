@@ -8,8 +8,8 @@ const Navbar = () => {
                 <Image
                     src="/images/ico-logo.png"
                     alt="Logo"
-                    width={24}
-                    height={32}
+                    width={28}
+                    height={36}
                 />
                 <h1>Clafiya</h1>
             </div>

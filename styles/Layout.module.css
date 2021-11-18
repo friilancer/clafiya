@@ -1,15 +1,13 @@
 .container{
-    width: 100vw;
-    max-width: 2000px;
-    margin: auto;
     min-height: 100vh;
-    display: block;
+    display: grid;
     background: #F6F8FB;
+    grid-template-columns: 100vw;
 }
 
 @media screen and (min-width: 1300px) {
     .container{
-        display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 15vw 85vw;
+        overflow-x: none;
     }
 }

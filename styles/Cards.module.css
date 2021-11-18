@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 1%;
-    margin: 20px 0;
-    padding: 10px 5px;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 .card{
@@ -12,7 +12,7 @@
     align-items: center;
     column-gap: 8%;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    padding: 10px 15px;
     width: 100%;
     max-width: 250px;
     cursor: pointer;
@@ -32,16 +32,13 @@
 @media screen and (min-width:1300px) {
     .card{
         column-gap: 20px;
-        padding: 10px 20px;
+        padding: 8px 20px;
     }
 }
 
-@media screen and (max-width:780px){
+@media screen and (max-width:700px){
     .card_container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 10px;
+       flex-direction: column;
     }
 
     .card{

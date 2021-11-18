@@ -1,8 +1,12 @@
 .table_container{
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    margin: 5px 0;
     margin-left: 5px;
     background: #ffffff;
+}
+
+.table_title{
+    padding: 10px 15px 0 15px;
 }
 
 .table_head{
@@ -11,7 +15,7 @@
     align-items: center;
     background: #FAFAFA;
     min-width: 850px;
-    padding: 5px 15px;
+    padding: 0 20px;
 }
 
 .table_row{
@@ -19,7 +23,8 @@
     grid-template-columns: 25% 70% 5%;
     align-items: center;
     min-width: 850px;
-    padding: 15px 15px;
+    padding: 10px 20px;
+    border-top: 1px solid #DBDDE0;
 }
 
 .table_data__name, .table_data__actions{
@@ -31,7 +36,7 @@
 .table_data__actions img{
     cursor: pointer;
 }
-.table_data__others{
+.table_data__others, .table_head__others{
     display: grid;
     grid-template-columns: 35% 15% 20% 20% 10%;
 }

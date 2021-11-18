@@ -40,10 +40,10 @@ const Row = ({avatarSrc, name="", email="", date="", visitTime="", chw="", plan=
 const Appointments = () => {
     return (
         <div className={`${styles.table_container}`}>
-            <h2>Appointment Activity</h2>
+            <h2 className={`${styles.table_title}`}>Appointment Activity</h2>
             <div className={`${styles.table_head}`}>
                 <h3>Name</h3>
-                <div className= {`${styles.table_data__others}`}>
+                <div className= {`${styles.table_head__others}`}>
                     <h3>Email</h3>
                     <h3>Date</h3>
                     <h3>Visit Time</h3>
