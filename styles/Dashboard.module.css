@@ -55,11 +55,9 @@
     border:1px solid #ffffff
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1300px){
     .container{
         padding: 15px;
-    }
-    .container{
         width: 100%;
     }
 

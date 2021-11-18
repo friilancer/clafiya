@@ -1,0 +1,21 @@
+.income_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 5px;
+}
+
+
+.income_container div{
+    height: 50px;
+    background: grey;
+}
+
+
+@media screen and (min-width: 1300px) {
+    .income_container{
+        padding: 10px 5px;
+    }
+}

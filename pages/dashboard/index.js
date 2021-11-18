@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Income from '../../components/income/Income'
 import Cards from '../../components/cards/Cards'
+import Appointments from '../../components/appointment/Appointment'
+
 import styles from '../../styles/dashboard.module.css'
 
 const Dashboard = () => {
@@ -46,6 +49,8 @@ const Dashboard = () => {
                     />                    
                 </nav>
                 <Cards />
+                <Income />
+                <Appointments />
             </main>
         </>
     )

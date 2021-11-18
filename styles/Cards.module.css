@@ -16,8 +16,8 @@
     width: 100%;
     max-width: 250px;
     cursor: pointer;
+    border-radius: 8px;
 }
-
 
 .card_header{
     margin: 0 0 5px 0;
@@ -29,7 +29,7 @@
     color: #31517A;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1300px) {
     .card{
         column-gap: 20px;
         padding: 10px 20px;
