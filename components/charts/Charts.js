@@ -83,7 +83,7 @@ const TotalIncome = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio: 2.7
+        aspectRatio: 2.4
     })
     return(
         <Line 
@@ -170,7 +170,7 @@ const TotalAppointments = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio:2.5
+        aspectRatio:2.4
     })
     return(
         <Line 
@@ -184,16 +184,16 @@ const Charts = () => {
 
     return (
         <div className={`${styles.charts_layout}`}>
-            <div className={`${styles.charts_container}`}>
+            
                 <div className={`${styles.chart}`}>
                     <TotalIncome />
                 </div>
-            </div>
-            <div className={`${styles.charts_container}`}>
+            
+         
                 <div className={`${styles.chart}`}>
                     <TotalAppointments />
                 </div>
-            </div>
+            
         </div>
     );
 }
