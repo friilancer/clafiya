@@ -2,49 +2,8 @@ import {useState, useEffect} from 'react'
 import {Line} from 'react-chartjs-2'
 import styles from '../../styles/Charts.module.css'
 
-const useWindowSize = () => {
-    const [size, setSize] = useState(0);
-    useEffect(() => {
-      const updateSize = () => {
-        setSize(window.innerWidth);
-      }
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);
-    return size;
-}
 
 const TotalIncome = () => {
-    const size = useWindowSize()
-    let [aspectRatio, setAspectRatio] = useState(2.4)
-    let [padding, setPadding] = useState({
-        left:10,
-        right:10,
-        top:5,
-        bottom:5
-    })
-
-    useEffect(() => {
-        if(size > 700){
-            setPadding({
-                left:10,
-                right:10,
-                top:10,
-                bottom:10
-            })
-            return setAspectRatio(2.4)
-        }else{
-            setPadding({
-                left:10,
-                right:10,
-                top:5,
-                bottom:5
-            })
-            return setAspectRatio(1.7)
-        }
-    },[size])
-
     let [data, setData] = useState({
         labels:["", "1 June", "8 July", "16 Augt", "24 Sept", "15 Octo"],
         datasets:[{
@@ -91,7 +50,12 @@ const TotalIncome = () => {
             }
         },
         layout: {
-            padding
+            padding:{
+                left:8,
+                right:8,
+                top:3,
+                bottom:3
+            }
         },
         scales: {
             y: {
@@ -119,7 +83,7 @@ const TotalIncome = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio
+        aspectRatio: 2.4
     })
     return(
         <Line 
@@ -130,35 +94,6 @@ const TotalIncome = () => {
 }
 
 const TotalAppointments = () => {
-    const size = useWindowSize()
-    let [aspectRatio, setAspectRatio] = useState(2.4)
-    let [padding, setPadding] = useState({
-        left:10,
-        right:10,
-        top:5,
-        bottom:5
-    })
-
-    useEffect(() => {
-        if(size > 700){
-            setPadding({
-                left:10,
-                right:10,
-                top:10,
-                bottom:10
-            })
-            return setAspectRatio(2.4)
-        }else{
-            setPadding({
-                left:10,
-                right:10,
-                top:5,
-                bottom:5
-            })
-            return setAspectRatio(1.7)
-        }
-    },[size])
-
     let [data, setData] = useState({
         labels:["", "25 April", "26 May", "27 June", "28 July", "29 Augt", "30 Sept", "01 Octo"],
         datasets:[{
@@ -207,7 +142,12 @@ const TotalAppointments = () => {
             }
         },
         layout: {
-            padding
+            padding:{
+                left:8,
+                right:8,
+                top:3,
+                bottom:3
+            }
         },
         scales: {
             y: {
@@ -230,7 +170,7 @@ const TotalAppointments = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio
+        aspectRatio:2.4
     })
     return(
         <Line 
