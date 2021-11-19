@@ -12,13 +12,13 @@
     display: flex;
     align-items: center;
     font-size: x-large;
-    column-gap: 7px;
+    column-gap: 3px;
     color: #31517A;
     padding: 0 0 0 15px;
 }
 
 .nav_header__text{
-    margin: 12px;
+    margin: 12px 5px;
 }
 
 .nav_list{

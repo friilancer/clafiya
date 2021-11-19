@@ -51,12 +51,12 @@
     position: relative;
     right: 5px;
     bottom: 8px;
-    padding: 1px 5px;
+    padding: 2px 5px 3px;
     font-size: x-small;
     color: #ffffff;
     font-weight: bold;
     background: #FF6760;
-    border-radius: 50%;
+    border-radius: 100%;
     border:1px solid #ffffff
 }
 

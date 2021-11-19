@@ -83,7 +83,7 @@ const TotalIncome = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio: 2.4
+        aspectRatio: 2.7
     })
     return(
         <Line 
@@ -170,7 +170,7 @@ const TotalAppointments = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
-        aspectRatio:2.4
+        aspectRatio:2.5
     })
     return(
         <Line 
