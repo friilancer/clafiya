@@ -1,11 +1,17 @@
-.charts_container{
+.charts_layout{
     display: grid;
     column-gap: 3%;
     width: 100%;
     margin: 10px 0;
     padding: 15px 5px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
+
+.charts_container{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
 
 .charts{
     position: relative;
@@ -14,9 +20,10 @@
 }
 
 
-@media screen and (min-width: 700px) {
-    .charts_container{
+@media screen and (min-width: 1000px) {
+    .charts_layout{
         padding: 5px;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
     

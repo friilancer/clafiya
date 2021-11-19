@@ -68,7 +68,12 @@ const Cards = () => {
                         Clafiya{"'"}s Earnings
                     </h5>
                     <p className={`${styles.card_text}`}>
-                        {Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(112174)}
+                        {Intl.NumberFormat('en-US', { 
+                            style: 'currency', 
+                            currency: 'USD',
+                            minimumFractionDigits: 0,
+                            maximumFractionDigits: 0,
+                        }).format(112174)}
                     </p>
                 </div>
             </div>

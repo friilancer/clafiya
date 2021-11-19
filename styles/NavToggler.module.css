@@ -1,0 +1,10 @@
+.navToggler{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+    .navToggler{
+        display: none;
+    }
+     
+}

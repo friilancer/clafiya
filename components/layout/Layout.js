@@ -1,10 +1,10 @@
 import styles from '../../styles/Layout.module.css'
 import Navbar from '../navbar/Navbar';
 
-const Layout = ({children}) => {
+const Layout = ({children, isOpen, toggleNav}) => {
     return (
         <div className={styles.container}>
-            <Navbar />
+            <Navbar isOpen={isOpen} toggleNav={toggleNav} />
             {children}
         </div>
     );
