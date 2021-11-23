@@ -83,6 +83,7 @@ const TotalIncome = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
+        aspectRatio:2.4
     })
     return(
         <Line 
@@ -110,7 +111,7 @@ const TotalAppointments = () => {
             pointRadius:5,
             pointBackgroundColor:"#FCDF98",
             tension: 0.5,
-            borderColor:"#FAC032",
+            borderColor:"#FAC032"
         }]
     })
 
@@ -169,6 +170,7 @@ const TotalAppointments = () => {
         },
         maintainAspectRatio: true,
         responsive:true,
+        aspectRatio:2.4
     })
     return(
         <Line 
