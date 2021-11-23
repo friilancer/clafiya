@@ -5,12 +5,12 @@ const NavToggler = ({toggleNav}) => {
     return (
         <div className={`${styles.navToggler}`}>
             <Image
-            src="/images/ico-logo.png"
-            alt="Logo"
-            width={35}
-            height={43}
-            onClick={toggleNav}
-        />
+                src="/images/ico-logo.png"
+                alt="Logo"
+                width={35}
+                height={43}
+                onClick={toggleNav}
+            />
         </div>
     )
 }
